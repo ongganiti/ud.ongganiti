@@ -7,10 +7,9 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #eafae0;
+      background-color: #fefae0;
       color: #2e4d1f;
       margin: 0;
-      padding: 0;
     }
     header {
       background-color: #5ca84a;
@@ -18,11 +17,36 @@
       padding: 20px;
       text-align: center;
     }
+    nav {
+      background-color: #4a8540;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
     main {
       padding: 20px;
     }
     section {
       margin-bottom: 30px;
+    }
+    .galeri {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .galeri img {
+      width: 200px;
+      border-radius: 8px;
     }
     footer {
       background-color: #5ca84a;
@@ -33,45 +57,60 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>UD. Ongganiti</h1>
-    <p>Jagung Pipil & Gabah Berkualitas dari Situbondo</p>
-  </header>
 
-  <main>
-    <section>
-      <h2>Tentang Kami</h2>
-      <p>UD. Ongganiti adalah usaha pertanian yang berlokasi di Duwet, Panarukan, Situbondo. Kami menyediakan jagung pipil KA 14–20 dan gabah KS KA 26–30 dengan kualitas unggulan.</p>
-    </section>
+<header>
+  <h1>UD. Ongganiti</h1>
+  <p>Jagung Pipil & Gabah Berkualitas dari Situbondo</p>
+</header>
 
-    <section>
-      <h2>Produk Kami</h2>
-      <ul>
-        <li>Jagung Pipil KA 14–20</li>
-        <li>Gabah KS KA 26–30</li>
-      </ul>
-    </section>
+<nav>
+  <a href="#beranda">Beranda</a>
+  <a href="#tentang">Tentang</a>
+  <a href="#produk">Produk</a>
+  <a href="#galeri">Galeri</a>
+  <a href="#kontak">Kontak</a>
+</nav>
 
-    <section>
-      <h2>Kontak</h2>
-      <p>Alamat: Jl. Raya Pathek - Duwet Selatan Rt. 01 Rw. 01, Duwet, Panarukan, Situbondo, Jawa Timur</p>
-      <p>Telepon/WA: 085325847978</p>
-      <p>Email: ud.ongganiti@gmail.com</p>
-    </section>
-  </main>
-  
-<section>
-  <h2>Galeri Foto</h2>
-  <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-    <img src="foto1.jpg" alt="Foto 1" style="width: 200px; border-radius: 8px;">
-    <img src="foto2.jpg" alt="Foto 2" style="width: 200px; border-radius: 8px;">
-    <img src="foto3.jpg" alt="Foto 3" style="width: 200px; border-radius: 8px;">
-    <img src="foto4.jpg" alt="Foto 4" style="width: 200px; border-radius: 8px;">
-  </div>
-</section>
+<main>
+  <section id="beranda">
+    <h2>Selamat Datang!</h2>
+    <p>Selamat datang di website resmi UD. Ongganiti. Kami menyediakan hasil pertanian berkualitas tinggi.</p>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 UD. Ongganiti</p>
-  </footer>
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>UD. Ongganiti adalah usaha pertanian yang berlokasi di Duwet, Panarukan, Situbondo. Kami menyediakan jagung pipil KA 14–20 dan gabah KS KA 26–30 dengan kualitas unggulan.</p>
+  </section>
+
+  <section id="produk">
+    <h2>Produk Kami</h2>
+    <ul>
+      <li>Jagung Pipil KA 14–20</li>
+      <li>Gabah KS KA 26–30</li>
+    </ul>
+  </section>
+
+  <section id="galeri">
+    <h2>Galeri</h2>
+    <div class="galeri">
+      <img src="foto1.jpg" alt="Foto 1">
+      <img src="foto2.jpg" alt="Foto 2">
+      <img src="foto3.jpg" alt="Foto 3">
+      <img src="foto4.jpg" alt="Foto 4">
+    </div>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak</h2>
+    <p><strong>Alamat:</strong> Jl. Raya Pathek - Duwet Selatan Rt. 01 Rw. 01, Duwet, Panarukan, Situbondo, Jawa Timur</p>
+    <p><strong>Telepon/WA:</strong> 085325847978</p>
+    <p><strong>Email:</strong> ud.ongganiti@gmail.com</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 UD. Ongganiti</p>
+</footer>
+
 </body>
 </html>
